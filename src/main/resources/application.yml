@@ -1,0 +1,17 @@
+# 应用
+server:
+  port: 9000
+spring:
+  # 数据库
+  datasource:
+    url: jdbc:mysql://192.168.10.30:3306/camunda_simple?characterEncoding=utf-8&serverTimezone=UTC
+    username: workflow
+    password: 123456
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+camunda:
+  bpm:
+    job-execution:
+      enabled: false
+    metrics:
+      enabled: false
